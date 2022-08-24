@@ -1,0 +1,7 @@
+com\gestiondestaffecole\test\Test.class
+com\gestiondestaffecole\model\Cours.class
+com\gestiondestaffecole\dao\Dao.class
+com\gestiondestaffecole\util\HibernateUtil.class
+com\gestiondestaffecole\model\Professeur.class
+com\gestiondestaffecole\model\Administrateur.class
+com\gestiondestaffecole\model\Etudiant.class

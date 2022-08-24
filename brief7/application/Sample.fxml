@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ApplicationConnection.SampleController">
+   <children>
+      <VBox layoutX="14.0" layoutY="75.0" prefHeight="464.0" prefWidth="70.0" spacing="15.0">
+         <children>
+            <Label text="ID" />
+            <Label text="Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Adress">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Email">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="City">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Country">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="84.0" layoutY="68.0" prefHeight="303.0" prefWidth="276.0" spacing="10.0">
+         <children>
+            <TextField fx:id="tfID" />
+            <TextField fx:id="tfName" />
+            <TextField fx:id="tfAdress" />
+            <TextField fx:id="tfEmail" />
+            <TextField fx:id="tfCity" />
+            <TextField fx:id="tfCountry" />
+         </children>
+      </VBox>
+      <TableView fx:id="tv" layoutX="373.0" layoutY="68.0" prefHeight="222.0" prefWidth="452.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="colAdress" prefWidth="75.0" text="Adress" />
+            <TableColumn fx:id="colEmail" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="colCity" prefWidth="75.0" text="City" />
+            <TableColumn fx:id="colCountry" prefWidth="75.0" text="Country" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnDelete" layoutX="308.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleButtonnAction" text="Delete" />
+      <Button fx:id="btnInsert" layoutX="84.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleButtonnAction" text="Insert" />
+      <Button fx:id="btnUpdate" layoutX="196.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleButtonnAction" text="Update" />
+   </children>
+</AnchorPane>
